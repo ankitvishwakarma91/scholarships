@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" th:href="@{/css/loginstyle.css}">
+  </head>
+  <body>
+    <div class="container">
+      <section class="login-box">
+        <header>Login</header>
+        <form action="/login" method="post" class="form">
+          <div class="input-box">
+            <label >Username : </label>
+            <div>
+              <input type="text"  name="username" placeholder="Enter usrname: " required />
+            </div>
+          </div>
+          <div class="input-box">
+            <label >Password : </label>
+            <div>
+              <input type="password" name="password" placeholder="Password:  " required />
+            </div>
+          </div>
+          <button>Login</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

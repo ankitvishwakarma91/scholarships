@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #043873;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:25px;
+}
+.container{
+  position: relative;
+  max-width:700px;
+  width: 100%;
+  /* height: 400px; */
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.container header{
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  text-align:center;
+  font-weight: 800;
+}
+
+.container .form{
+  margin-top: 30px;
+}
+
+.form .input-box{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label{
+  color: #333;
+  font-weight: bold;
+
+
+}
+
+.form :where(.input-box input){
+  position: relative;
+  height: 40px;
+  width: 100%;
+  font-size: 1rem;
+  color: #707070;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-top: 8px;
+}
+
+.form button{
+  height: 55px;
+  width: 100%;
+  background-color: #043873;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.form button:hover{
+  background-color: rgba(51, 231, 57, 0.944);
+}
+
+@media screen and (max-width:500px){
+  .form .col{
+      flex-wrap: wrap;
+
+  }
+
+  /* .form :where(.gender-Options,.gender){
+      row-gap: 15px;
+  } */
+}

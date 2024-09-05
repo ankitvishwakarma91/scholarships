@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+    <title>PMSSS Scholarship</title>
+    <script defer th:src="@{/assets/js/script.js}"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="menu">
+          <div class="top-box">
+            <img th:src="@{/assets/images/govt-image.png}" alt="Govt Logo" class="nav-logos" />
+            <div class="text-box">
+              <h1>The Prime Minister's Special Scholarship Scheme</h1>
+              <h2>All India Council for Technical Education</h2>
+              <p>Government of India</p>
+            </div>
+            <div class="login-link-container">
+              <a th:href="@{/login}" class="login-link login-link-2">Login</a>
+              <a th:href="@{/registration}" class="login-link login-link-2">Register</a>
+            </div>
+            <img
+              th:src="@{/assets/images/All_India_Council_for_Technical_Education_logo.png}"
+              alt="AICTE logo"
+              class="nav-logos"
+            />
+          </div>
+          <div class="links">
+            <nav>
+              <a href="#">
+                <ion-icon name="home"></ion-icon>
+                <span>Home</span>
+                <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+              <div class="btn-nav">
+                <a href="#">
+                  <span>Student</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></a>
+                <ul>
+                  <li>Registration</li>
+                  <li>Login</li>
+                </ul>
+              </div>
+
+              <div class="btn-nav">
+                <a href="#">
+                  <span>Institute</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></a>
+                <ul>
+                  <li>Registration</li>
+                  <li>Login</li>
+                </ul>
+              </div>
+              <div class="btn-nav">
+                <a href="#">
+                  <span>Department</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></a>
+                <ul>
+                  <li>Hon'ble Minister</li>
+                  <li>Adminstrator</li>
+                  <li>Auditor</li>
+                </ul>
+              </div>
+              <div class="btn-nav">
+                <a href="#">
+                  <span>&nbsp; &nbsp;Help &nbsp;&nbsp;</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></a>
+                <ul>
+                  <li>User Manual</li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="front-page">
+          <div class="text-box">
+            <h1>
+              Welcome to the Prime Minister's Special Scholarship Scheme (PMSSS)
+            </h1>
+            <a th:href="@{/registration}">Apply Now</a>
+          </div>
+          <img th:src="@{/assets/images/header-img.png}" alt="front-image" />
+        </div>
+      </header>
+      <section class="info-section">
+        <img th:src="@{/assets/images/3-person.png}" alt="Group photo" />
+        <div class="text">
+          <h3>What is PMSSS?</h3>
+          <p>
+            This initiative by the Government of India, under the All India
+            Council for Technical Education (AICTE), aims to empower students by
+            providing financial support for higher education across the nation.
+            With this scholarship, eligible students can access top universities
+            and institutions, enabling them to pursue undergraduate degrees in
+            engineering, medical, and general courses. PMSSS is committed to
+            shaping future leaders by removing financial barriers and promoting
+            academic excellence.
+          </p>
+        </div>
+      </section>
+      <section class="detail-section">
+        <h3>
+          Introducing the Paperless Scholarship Disbursement System for PMSSS
+        </h3>
+        <div>
+          <p>
+            In alignment with the Prime Minister's Special Scholarship Scheme
+            (PMSSS) vision of empowering students across India, we are proud to
+            introduce a fully digital scholarship disbursement system. This new
+            initiative will streamline the entire process of scholarship
+            applications, document verification, and payment disbursement,
+            ensuring that students can focus more on their education and less on
+            paperwork.
+          </p>
+          <img th:src="@{/assets/images/group-work.png}" alt="Group of students working together" />
+        </div>
+      </section>
+      <section class="info-section added-info">
+        <img th:src="@{/assets/images/1-working.png}" alt="working man" />
+        <div class="text">
+          <h3>Why Go Paperless?</h3>
+          <p>
+            The traditional scholarship disbursement process involves extensive
+            paperwork, often leading to delays, mismanagement, and unnecessary
+            complexity. By moving to a digital system, we aim to:
+          </p>
+          <ul>
+            <li>
+              Increase Efficiency A fully automated system reduces processing
+              time and ensures quicker scholarship disbursement.
+            </li>
+            <li>
+              Promote Sustainability: Going paperless significantly reduces the
+              environmental impact associated with traditional paper-based
+              processes.
+            </li>
+            <li>
+              Enhance Security: The digital platform ensures that all sensitive
+              data is handled securely, complying with the latest data privacy
+              standards.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="final-section">
+        <h3>Ready to get started?</h3>
+        <p>
+          The Prime Minister's Special Scholarship Scheme is here to support
+          your academic journey. With our new paperless scholarship disbursement
+          system, we are making this process faster, easier, and more secure.
+        </p>
+        <p>Let us help you focus on what truly matters</p>
+        <a href="#">Check Eligibility</a>
+      </section>
+      <footer>
+        <h4>Disclaimer:</h4>
+        <p>
+          This portal is part of the Government of India's initiative to support
+          higher education for students across the country. All personal data is
+          handled in compliance with relevant data protection laws
+        </p>
+        <ul>
+          <li><a href="#">Copyright Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <span
+          >This site is designed by Binary Quill. All Rights Reserved.
+        </span>
+      </footer>
+    </div>
+    <script
+      type="module"
+      th:src="@{/https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js}"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

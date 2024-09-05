@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #043873;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:25px;
+}
+
+.container {
+  position: relative;
+  max-width:700px;
+  width: 100%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px ;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.container header{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-align:center;
+}
+
+.container .form{
+    margin-top: 30px;
+}
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label{
+    color: #333;
+
+}
+
+.form :where(.input-box input,.select-box){
+    position: relative;
+    height: 40px;
+    width: 100%;
+    font-size: 1rem;
+    color: #707070;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-top: 8px;
+}
+
+.form .col{
+    display: flex;
+    column-gap:20px;
+}
+
+
+
+.form .gender-box{
+    margin-top: 20px;
+}
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form :where(.gender-Options,.gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.gender input{
+accent-color:aquamarine;
+}
+
+.form .gender{
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+.form :where(.gender input,.gender label){
+    cursor: pointer;
+}
+.gender label{
+    color: #707070;
+}
+.select-box select{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.Address :where(input, .select-box){
+    margin-top: 10px;
+
+}
+
+.form button{
+    height: 55px;
+    width: 100%;
+    background-color: aquamarine;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.form button:hover{
+    background-color: rgba(111, 187, 124, 0.944);
+}
+@media screen and (max-width:500px){
+    .form .col{
+        flex-wrap: wrap;
+
+    }
+
+    .form :where(.gender-Options,.gender){
+        row-gap: 15px;
+    }
+}
