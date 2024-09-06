@@ -10,4 +10,10 @@ public class HomeController {
     public String displayHomePage(){
         return "home";
     }
+
+
+    @RequestMapping(value = {"/apply"})
+    public String displayApply(){
+        return "apply";
+    }
 }

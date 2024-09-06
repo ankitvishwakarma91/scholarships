@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" th:href="@{/css/loginstyle.css}">
+    <link rel="stylesheet" th:href="@{/assets/css/loginstyle.css}">
   </head>
   <body>
     <div class="container">
       <section class="login-box">
         <header>Login</header>
-        <form action="/login" method="post" class="form">
+        <form th:action="@{/LoginD}" method="post" class="form">
           <div class="input-box">
             <label >Username : </label>
             <div>
-              <input type="text"  name="username" placeholder="Enter usrname: " required />
+              <input type="text"  name="username" placeholder="Enter username: " required />
             </div>
           </div>
           <div class="input-box">

@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" th:href="@{/css/logged.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/logged.css}" />
     <title>PMSSS Scholarship</title>
     <script defer src="script.js"></script>
   </head>
@@ -18,7 +18,7 @@
       <header>
         <div class="menu">
           <div class="top-box">
-            <img th:src="@{/assets/images/govt-image.png}"  alt="Govt Logo" class="nav-logos" />
+            <img th:src="@{/assets/css/images/govt-image.png}"  alt="Govt Logo" class="nav-logos" />
             <div class="text-box">
               <h1>The Prime Minister's Special Scholarship Scheme</h1>
               <h2>All India Council for Technical Education</h2>
@@ -26,13 +26,13 @@
             </div>
             <div class="logged-In">
               <img
-                th:src="@{/assets/images/maleavatar.jpg}"
+                th:src="@{/assets/css/images/maleavatar.jpg}"
                 alt="No username"
               />
-              <span>Username</span>
+              <span th:text="${username}">Username</span>
             </div>
             <img
-                    th:src="@{/assets/images/All_India_Council_for_Technical_Education_logo.png}"
+                    th:src="@{/assets/css/images/All_India_Council_for_Technical_Education_logo.png}"
               alt="AICTE logo"
               class="nav-logos AICTE"
             />
@@ -100,10 +100,10 @@
             without the need for hard copies . Get your economic support today .
           </p>
         </div>
-        <img th:src="@{/assets/images/3-person.png}" alt="Group photo" />
+        <img th:src="@{/assets/css/images/3-person.png}" alt="Group photo" />
       </section>
       <section class="info-section">
-        <img th:src="@{/assets/images/group-work.png}" alt="Group photo" />
+        <img th:src="@{/assets/css/images/group-work.png}" alt="Group photo" />
         <div class="text">
           <h3>What is PMSSS?</h3>
           <p>
